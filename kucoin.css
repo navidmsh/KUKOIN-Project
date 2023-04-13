@@ -1,0 +1,685 @@
+/* header {
+    margin: 0;
+} */
+
+@font-face {
+    font-family: popping;
+    src: url(static/FiraSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: pp;
+    src: url(font/Poppins-Regular.ttf);
+}
+
+img {
+    width: 20px; 
+}
+
+/* general */
+a,
+h1 {
+    font-family: popping;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+/* header */
+header {
+    width: 100%;
+    top: 0;
+    background: white;
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+}
+
+header .container {
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    margin: 0;
+}
+
+.icon-kucoin {
+    width: 120px;
+    vertical-align: bottom;
+    padding-right: 20px;
+    opacity: 1;
+    padding-left: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding-left: 15px;
+}
+
+header nav ul>li {
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+header nav ul>li:first-of-type {
+    padding: 0;
+}
+
+header nav ul>li>a {
+    padding: 30px 0;
+}
+
+header nav ul>li:last-of-type>a {
+    font-size: 14px;
+    background: rgba(206, 237, 248, 0.603);
+    padding: 6px 10px;
+    color: rgb(62, 185, 62);
+    border-radius: 8px;
+}
+
+header nav img {
+    width: 6px;
+    opacity: 0.4;
+}
+
+header nav .img-menu {
+    width: 20px;
+    margin: 0;
+    opacity: 1;
+}
+
+/* header link */
+
+.header-links a {
+    margin: 5px;
+    font-family: pp;
+    font-size: 14px;
+}
+
+.header-links a>.icon-dwn {
+    width: 13px;
+    border: solid 1px black;
+    padding: 4px 0 4px 0;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+header .container>div {
+    margin-right: 40px;
+}
+
+header .container>div>a:nth-of-type(1) {
+    border: solid 1px rgb(38, 190, 33);
+    padding: 5px 12px;
+    border-radius: 5px;
+    color: rgb(45, 185, 40);
+}
+
+header .container>div>a:nth-of-type(2) {
+    background-color: rgb(49, 165, 101);
+    color: rgba(255, 255, 255, 0.863);
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+header .container>div>a:nth-of-type(3) {
+    background-color: rgba(204, 204, 204, 0.411);
+    padding: 10px 5px 1px 5px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+header .container>div>a:nth-of-type(4) {
+    background-color: rgba(204, 204, 204, 0.411);
+    padding: 5px 5px 4px 5px;
+    border-radius: 5px;
+}
+
+/* hovers header */
+.icon-kucoin:hover{
+opacity: 0.6;
+}
+header .container>nav ul li>a:hover .arow{ 
+    transform: rotate(180deg);
+}
+header .container>nav ul li:hover{
+    opacity: 0.6;
+}
+.header-links a:hover{
+    opacity: 0.6;
+}
+
+/* ....................main................ */
+main{
+    width: 1300px;
+    margin: 0 auto;
+    display: block;
+}
+
+#section1 {
+    background-color: rgba(125,135,146,.0784);
+}
+
+#first-menu a{
+    justify-content: center;
+}
+
+#first-menu img{
+    width: 15px;
+    opacity: 0.7;
+}
+
+a, span, p, h1, h2, h3, h4, h5, h6 {
+    font-family: KUCOINSans,-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei";
+}
+
+section>div>ul {
+    display: flex;
+    margin: auto;
+}
+
+section>div>ul>li {
+    padding: 15px 20px;
+    border-bottom: 2px solid transparent;
+    list-style: none;
+}
+
+section>div>ul>li a{
+    color: rgba(0,20,42,.6);
+}
+
+main #section1>div>ul>li a:hover {
+    color: #43a38a;
+}
+
+main #section1>div>ul>li:hover {
+    background-color: #cdf1e8;
+}
+
+main #section1>div>ul>li:active {
+    border-bottom-color: #2dbd96;
+}
+
+#section2 > h1{
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+#section2 > h4{
+    color: rgba(0, 13, 29, 0.4);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#second-menu  {
+    display: inline-flex;
+    list-style: none;
+    margin-left: 20px;
+    align-items: center;
+}
+
+#second-menu > a{
+    color: rgba(0, 13, 29, 0.6);
+    display: inline-flex;
+    list-style: none;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+}
+
+#second-menu > a:hover {
+    color: #2ec19a;
+}
+
+#second-menu > a:active {
+    border-bottom-color: #2dbd96;
+}
+
+#list {
+    display:inline-flex;
+}
+
+#searchbox {
+    background: rgba(0, 13, 29, 0.04);
+    padding: 1px;
+    margin-left: 211px;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+
+#searchbox:hover {
+    opacity: 0.3;
+}
+
+#searchbox img{
+    margin: 10px 0 0 10px;
+}
+
+#searchbox input{
+    background: none;
+    border: none;
+    outline: none;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px 36px 10px 10px;
+    width: 80px;
+}
+
+#section2 > #sorter {
+    background-color: rgba(238, 239, 239, 0.6);
+    border-radius: 5px;
+    margin: 1% auto;
+    position: sticky;
+    top: 75px;
+    z-index: 1;
+    
+}
+
+#sorter li{
+    /* display: flex; */
+    margin-right: 100px;
+}
+
+#section2 > #sorter a {
+    font-family: KUCOINSans, -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei";;
+    display: inline-flex;
+    color: rgba(0, 13, 29, 0.6);
+    
+}
+
+#section2 #sorter img {
+    width: 15px;
+    height: 15px;
+    margin:5px;
+    opacity: 0.4;
+}
+
+#arz {
+    width: 100%;
+    padding: 0 10px;
+    text-align: left;
+    margin: 0;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+    font-weight: 600;
+    font-family: KUCOINSans, -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei";
+    font-size: 14px;;
+}
+
+#arz li{
+    width: 100%;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+#arz a{
+    color: rgb(0, 13, 29);
+}
+
+#product {
+    display: flex;
+}
+
+#product div{
+    margin-right: 10px;
+}
+
+#star img{
+    vertical-align:middle;
+}
+
+#icon img{
+    width: 30px;
+}
+
+#noun1 a{
+    font-weight: 550;
+}
+
+#change{
+    color: rgb(1, 188, 141);
+}
+
+#action{
+    display: flex;
+}
+
+#action a{
+    font-size: 14px;
+    color: rgb(1, 188, 141);
+    font-weight: 600;
+    font-family: KUCOINSans, -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei";
+}
+
+#action hr{
+    height: 20px;
+    color:rgba(219, 222, 224, 0.6);
+    margin-top: 0;
+}
+
+#action div{
+    color: rgb(1, 188, 141);
+    margin-right: 10px;
+}
+
+#space{
+    opacity: 0.05;
+    /* height: 50px; */
+}
+
+#page-numbers {
+    font-family: KUCOINSans, -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei";
+    text-align: right;
+    padding: 86px 0 200px;
+}
+
+#page-numbers>a{
+    margin: 10px;
+    color: rgb(0, 13, 29);
+    padding: 10px;
+}
+
+#page-numbers>a:active{
+    background-color: #2dbd96;
+    color: white;
+}
+
+#page-numbers img{
+    opacity: 0.4;
+    /* align-items: center; */
+}
+
+#page-numbers>a:hover{
+    background-color: #c7e7df;
+}
+
+/* ...............footer............. */
+
+footer{
+    width: 1300px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+#footer1,#footer2{
+    display: flex;
+}
+
+/* #footer1 ul{
+    width: 500px;
+} */
+
+#first-column, #second-column, #third-column, #fourth-column, #fifth-column{
+    width: 500px;
+}
+
+footer a img{
+    width: 12%;
+    margin-bottom: 80px;
+}
+
+footer a {
+    font-family: KUCOINSans, -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei";
+    color: rgba(0, 13, 29, 0.6);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+#footer1 li{
+    margin: 20px 20px 20px 0;
+}
+
+#footer2 li{
+    margin: 20px 20px 20px 0;
+}
+
+#footer1 #head a{
+    color: rgb(0, 13, 29);
+    font-size: 20px;
+}
+
+#footer2 #head a{
+    color: rgb(0, 13, 29);
+    font-size: 20px;
+}
+
+#footer1 #head {
+    margin-bottom: 40px;
+}
+
+#footer2 #head {
+    margin-bottom: 40px;
+}
+
+#footer2{
+    margin-bottom: 50px;
+}
+
+#community{
+    display: inline-flex;
+    padding: 0;
+    position: relative;
+}
+
+#community li{
+    margin: 0;
+    height: 15%;
+}
+
+#community li img{
+    width: 25px;
+    margin: 0 30px 50px 0;
+}
+#community li img:hover{
+    transform: translate(0,-5px);
+    transition: 0.3s;
+}
+
+#facebook{
+    width: 250px;
+    height: 300px;
+    overflow-y: scroll;
+    scrollbar-color: rgb(178, 174, 183) rgb(223, 227, 223);
+    /* shape-outside: linear-gradient(); */
+    /* scrollbar-width: fat; */
+    box-shadow: -3px 3px 5px rgb(231, 229, 229);    
+    display: none;
+    overflow:visible;
+    background-color: #fff;
+    /* position: absolute; */
+    top: -110%;
+    right:35%;
+    
+}
+
+#facebookmain:hover #facebook{
+    display: block;
+    overflow:auto;
+    position: absolute;
+    transition: transform 5s;
+}
+
+#facebook li{
+    position: relative;
+    margin: 10px;
+    text-align: center;
+}
+
+#facebook a{
+    font-family: KUCOINSans, -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei";
+    font-weight: 500;
+    font-size: 13px;
+}
+
+#icon1 a img{
+    margin: 0;
+}
+
+#icon2 a img{
+    margin: 0;
+}
+
+#icon3 a img{
+    margin: 0;
+}
+
+#community:first-of-type li{
+    margin: 10px;
+}
+
+#instagram{
+    width: 250px;
+    height: 300px;
+    overflow-y: scroll;
+    scrollbar-color: rgb(178, 174, 183) rgb(223, 227, 223);
+    shape-outside: linear-gradient();
+    /* scrollbar-width: fat; */
+    box-shadow: -3px 3px 5px rgb(231, 229, 229);    
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    top: -70%;
+    right:35%;
+    
+}
+
+#instagrammain:hover ul{
+    display: block;
+    transition: transform 5s;
+}
+
+#instagram li{
+    margin: 10px;
+    text-align: center;
+}
+
+#instagram a{
+    font-family: KUCOINSans, -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei";
+    font-weight: 500;
+    font-size: 13px;
+}
+
+#twitter{
+    width: 250px;
+    height: 300px;
+    overflow-y: scroll;
+    scrollbar-color: rgb(178, 174, 183) rgb(223, 227, 223);
+    shape-outside: linear-gradient();
+    /* scrollbar-width: fat; */
+    box-shadow: -3px 3px 5px rgb(231, 229, 229);    
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    top: -110%;
+    right:15%;
+    
+}
+
+#twittermain:hover ul{
+    display: block;
+    transition: transform 5s;
+}
+
+#twitter li{
+    margin: 10px;
+    text-align: center;
+}
+
+#twitter a{
+    font-family: KUCOINSans, -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei";
+    font-weight: 500;
+    font-size: 13px;
+}
+
+#reddit{
+    width: 250px;
+    height: 300px;
+    box-shadow: -3px 3px 5px rgb(231, 229, 229);    
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    top: -90%;
+    right:15%;
+    
+}
+
+#redditmain:hover ul{
+    display: block;
+    transition: transform 5s;
+}
+
+#reddit li{
+    margin: 10px;
+    text-align: center;
+}
+
+#reddit a{
+    font-family: KUCOINSans, -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei";
+    font-weight: 500;
+    font-size: 13px;
+}
+
+#telegram{
+    width: 250px;
+    height: 300px;
+    overflow-y: scroll;
+    scrollbar-color: rgb(178, 174, 183) rgb(223, 227, 223);
+    shape-outside: linear-gradient();
+    box-shadow: -3px 3px 5px rgb(231, 229, 229);    
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    top: -110%;
+    right: -15%;
+    
+}
+
+#telegrammain:hover ul{
+    display: block;
+    transition: transform 5s;
+}
+
+#telegram li{
+    margin: 10px;
+    text-align: center;
+}
+
+#telegram a{
+    font-family: KUCOINSans, -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei";
+    font-weight: 500;
+    font-size: 13px;
+}
+
+#footer3{
+    width: 1300px;
+    margin: 30px 0;
+}
+
+#footer3 div{
+    display: inline-flex;
+    position: relative;
+    color: rgba(0, 13, 29, 0.6);
+    font-family: KUCOINSans,-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei";
+}
+
+#time {
+    float: right;
+}
